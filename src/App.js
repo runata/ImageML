@@ -13,7 +13,7 @@ import Clarifai from 'clarifai';
 const particleOptions = {
   particles: {
       number: {
-        value: 60,
+        value: 20,
         density: {
             enable: true,
             value_area: 800
@@ -58,6 +58,7 @@ class App extends Component {
 
   onInputChange = (event) => {
     this.setState({input: event.target.value});
+    console.log(event.target.value);
   }
 
   onButtonSubmit = () =>{
